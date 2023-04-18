@@ -9,7 +9,30 @@
 <body>
     <h1>SolarChargeSim</h1>
     <form id="simulation-form">
-        <!-- Add your input fields here -->
+        <label for="annual-energy-consumption-kwh">Consommation annuelle d'énergie (kWh):</label>
+        <input type="number" id="annual-energy-consumption-kwh" required>
+
+        <label for="coverage-ratio">Taux de couverture (%):</label>
+        <input type="number" id="coverage-ratio" required>
+
+        <label for="solar-irradiation">Ensoleillement (kWh/m²):</label>
+        <input type="number" id="solar-irradiation" required>
+
+        <label for="roof-orientation">Orientation du toit (°):</label>
+        <input type="number" id="roof-orientation" required>
+
+        <label for="system-efficiency">Efficacité du système (%):</label>
+        <input type="number" id="system-efficiency" required>
+
+        <label for="panel-efficiency">Efficacité des panneaux solaires (%):</label>
+        <input type="number" id="panel-efficiency" required>
+
+        <label for="inverter-efficiency">Efficacité de l'onduleur (%):</label>
+        <input type="number" id="inverter-efficiency" required>
+
+        <label for="desired-storage-capacity-hours">Capacité de stockage souhaitée (heures):</label>
+        <input type="number" id="desired-storage-capacity-hours" required>
+
         <button type="submit">Run Simulation</button>
     </form>
     <div id="results">
