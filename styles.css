@@ -12,6 +12,12 @@ form {
 input {
     padding: 0.5rem;
     font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
 }
 
 button {
@@ -25,4 +31,9 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
 }
